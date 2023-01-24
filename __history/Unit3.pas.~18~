@@ -1,0 +1,87 @@
+unit Unit3;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, System.ImageList,
+  Vcl.ImgList, Vcl.Imaging.pngimage, Vcl.ExtCtrls;
+
+type
+  TForm3 = class(TForm)
+    Button1: TButton;
+    ImageList1: TImageList;
+    Button2: TButton;
+    Button3: TButton;
+    Memo1: TMemo;
+    SaveDialog1: TSaveDialog;
+    OpenDialog1: TOpenDialog;
+    Button4: TButton;
+    Button5: TButton;
+    Image1: TImage;
+    procedure Button3Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form3: TForm3;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm3.Button3Click(Sender: TObject);
+begin
+memo1.Lines.clear;
+Memo1.lines.add(TOSVersion.Tostring);
+
+Memo1.lines.add('Build:	'+ IntToStr(TosVersion.Build));
+Memo1.lines.add('Virson:	'+ IntToStr(TosVersion.Major));
+Memo1.lines.add('Minor:	'+ IntToStr(TosVersion.Minor));
+Memo1.lines.add('Name:	'+ TosVersion.Name);
+Memo1.lines.add('Service Pack -Major:	' + IntToStr(TosVersion.ServicePackMajor));
+Memo1.lines.add('Service Pack -Minor:	' + IntToStr(TosVersion.ServicePackMinor));
+
+end;
+
+procedure TForm3.Button4Click(Sender: TObject);
+begin
+ { Execute a save file dialog. }
+  if SaveDialog1.Execute then
+    { First check if the file exists. }
+    if FileExists(SaveDialog1.FileName) then
+      { If it exists, raise an exception. }
+      raise Exception.Create('File already exists. Cannot overwrite.')
+    else
+      { Otherwise, save the memo box lines into the file. }
+      Memo1.Lines.SaveToFile(SaveDialog1.FileName);
+end;
+
+
+ procedure TForm3.Button5Click(Sender: TObject);
+begin
+                         { Execute an open file dialog. }
+  if OpenDialog1.Execute then
+    { First check if the file exists. }
+    if FileExists(OpenDialog1.FileName) then
+      { If it exists, load the data into the memo box. }
+      Memo1.Lines.LoadFromFile(OpenDialog1.FileName)
+    else
+      { Otherwise, raise an exception. }
+      raise Exception.Create('File does not exist.');
+end;
+
+
+
+
+
+
+
+
+
+end.

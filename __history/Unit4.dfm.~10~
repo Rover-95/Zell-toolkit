@@ -1,0 +1,49 @@
+object Form4: TForm4
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize, biMaximize, biHelp]
+  Caption = 'T'
+  ClientHeight = 473
+  ClientWidth = 626
+  Color = clBtnFace
+  CustomTitleBar.CaptionAlignment = taCenter
+  CustomTitleBar.Control = TitleBarPanel1
+  CustomTitleBar.Enabled = True
+  CustomTitleBar.Height = -1
+  CustomTitleBar.BackgroundColor = 11018519
+  CustomTitleBar.ForegroundColor = clWhite
+  CustomTitleBar.InactiveBackgroundColor = clBlack
+  CustomTitleBar.InactiveForegroundColor = clWhite
+  CustomTitleBar.ButtonForegroundColor = clWhite
+  CustomTitleBar.ButtonBackgroundColor = 11018519
+  CustomTitleBar.ButtonHoverForegroundColor = clWhite
+  CustomTitleBar.ButtonHoverBackgroundColor = 13576732
+  CustomTitleBar.ButtonPressedForegroundColor = clWhite
+  CustomTitleBar.ButtonPressedBackgroundColor = 15028550
+  CustomTitleBar.ButtonInactiveForegroundColor = clWhite
+  CustomTitleBar.ButtonInactiveBackgroundColor = clBlack
+  UseDockManager = True
+  DockSite = True
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  GlassFrame.Enabled = True
+  GlassFrame.Left = -1
+  GlassFrame.Top = -1
+  GlassFrame.Right = -1
+  GlassFrame.Bottom = -1
+  GlassFrame.SheetOfGlass = True
+  Position = poDesktopCenter
+  StyleElements = [seFont, seClient]
+  OnCreate = FormCreate
+  TextHeight = 15
+  object TitleBarPanel1: TTitleBarPanel
+    Left = 0
+    Top = 0
+    Width = 626
+    Height = 24
+    CustomButtons = <>
+  end
+end

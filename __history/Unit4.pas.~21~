@@ -1,0 +1,82 @@
+unit Unit4;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
+
+type
+  TForm4 = class(TForm)
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+    procedure EnableBlur;
+  protected
+         { Protected declarations }
+              procedure CreateParams(var Params: TCreateParams); override;
+
+  public
+    { Public declarations }
+  end;
+
+  AccentPolicy = packed record
+    AccentState: Integer;
+    AccentFlags: Integer;
+    GradientColor: Integer;
+    AnimationId: Integer;
+  end;
+
+  WindowCompositionAttributeData = packed record
+    Attribute: Cardinal;
+    Data: Pointer;
+    SizeOfData: Integer;
+  end;
+
+
+var
+  Form4: TForm4;
+  SetWindowCompositionAttribute:function (hWnd: HWND; var data: WindowCompositionAttributeData):integer; stdcall;
+implementation
+
+{$R *.dfm}
+
+
+procedure TForm4.EnableBlur;
+const
+  WCA_ACCENT_POLICY = 19;
+  ACCENT_ENABLE_BLURBEHIND = 3;
+var
+  dwm10: THandle;
+  data: WindowCompositionAttributeData;
+  accent: AccentPolicy;
+begin
+      dwm10 := LoadLibrary('user32.dll');
+      try
+        @SetWindowCompositionAttribute := GetProcAddress(dwm10, 'SetWindowCompositionAttribute');
+        if @SetWindowCompositionAttribute <> nil then
+        begin
+          accent.AccentState := ACCENT_ENABLE_BLURBEHIND;
+          data.Attribute := WCA_ACCENT_POLICY;
+          data.SizeOfData := SizeOf(accent);
+          data.Data := @accent;
+          SetWindowCompositionAttribute(Handle, data);
+        end
+        else
+        begin
+          ShowMessage('Not found Windows 10 SetWindowCompositionAttribute in user32.dll');
+        end;
+      finally
+        FreeLibrary(dwm10);
+      end;
+end;
+
+
+procedure TForm4.FormCreate(Sender: TObject);
+begin
+  BorderStyle := bsSingle;
+  BorderIcons := [biSystemMenu, biMinimize];
+  EnableBlur;
+end;
+
+end.

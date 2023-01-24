@@ -1,0 +1,38 @@
+unit Unit4;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.TitleBarCtrls, Vcl.ComCtrls,
+  Vcl.BaseImageCollection, Vcl.ImageCollection, System.ImageList, Vcl.ImgList,
+  Vcl.VirtualImageList,DwmApi,Vcl.StdCtrls, Vcl.Imaging.jpeg,
+  Vcl.ExtCtrls,;
+
+type
+  TForm4 = class(TForm)
+    TitleBarPanel1: TTitleBarPanel;
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form4: TForm4;
+
+
+
+
+implementation
+
+{$R *.dfm}
+
+
+
+
+
+
+
+end.

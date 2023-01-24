@@ -1,0 +1,7 @@
+2022/08/22-19:57:47.628 aa08 Reusing MANIFEST E:\documentz\delphi\2010\ADROID 14\Win32\Debug\Project1.exe.WebView2\EBWebView\Default\IndexedDB\https_html5test.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/08/22-19:57:47.628 aa08 Recovering log #4
+2022/08/22-19:57:47.629 aa08 Reusing old log E:\documentz\delphi\2010\ADROID 14\Win32\Debug\Project1.exe.WebView2\EBWebView\Default\IndexedDB\https_html5test.com_0.indexeddb.leveldb/000004.log 
+2022/08/22-19:57:47.719 aa08 Level-0 table #8: started
+2022/08/22-19:57:47.720 aa08 Level-0 table #8: 1640 bytes OK
+2022/08/22-19:57:47.722 aa08 Delete type=0 #4
+2022/08/22-19:57:47.722 aa08 Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)

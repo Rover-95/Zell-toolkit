@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/08/06 20:08:30.000.199,=C:\Users\Lelkasa\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/08/06 20:13:41.000.669,E:\documentz\delphi\2010\ADROID 14\Unit1.pas=C:\Users\Lelkasa\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/08/06 20:13:41.000.669,E:\documentz\delphi\2010\ADROID 14\Unit1.dfm=C:\Users\Lelkasa\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/08/06 20:13:49.000.805,=C:\Users\Lelkasa\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/08/06 20:13:56.000.203,E:\documentz\delphi\2010\ADROID 14\Unit2.dfm=C:\Users\Lelkasa\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2022/08/06 20:13:56.000.203,E:\documentz\delphi\2010\ADROID 14\Unit2.pas=C:\Users\Lelkasa\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/08/06 20:14:20.000.485,E:\documentz\delphi\2010\ADROID 14\Project1.dproj=C:\Users\Lelkasa\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/08/06 21:21:24.000.522,=E:\documentz\delphi\2010\ADROID 14\Unit3.pas</Transaction>
+    <Transaction>2022/08/07 15:24:18.000.554,=E:\documentz\delphi\2010\ADROID 14\Unit4.pas</Transaction>
+    <Transaction>2022/08/08 17:38:16.000.725,E:\documentz\delphi\2010\ADROID 14\Unit4.pas=</Transaction>
+    <Transaction>2022/08/08 17:38:23.000.050,=E:\documentz\delphi\2010\ADROID 14\Unit5.pas</Transaction>
+    <Transaction>2022/08/08 17:40:12.000.629,E:\documentz\delphi\2010\ADROID 14\Unit4.pas=E:\documentz\delphi\2010\ADROID 14\Unit5.pas</Transaction>
+    <Transaction>2022/08/08 17:40:12.000.629,E:\documentz\delphi\2010\ADROID 14\Unit4.dfm=E:\documentz\delphi\2010\ADROID 14\Unit5.dfm</Transaction>
+    <Transaction>2022/08/08 17:45:54.000.535,=E:\documentz\delphi\2010\ADROID 14\custom\rESOURCES\Microsoft.Web.WebView2.Core.dll</Transaction>
+    <Transaction>2022/08/08 17:45:54.000.596,=E:\documentz\delphi\2010\ADROID 14\custom\rESOURCES\Microsoft.Web.WebView2.Wpf.dll</Transaction>
+    <Transaction>2022/08/08 17:45:54.000.722,=E:\documentz\delphi\2010\ADROID 14\custom\rESOURCES\WebView2Loader.dll</Transaction>
+    <Transaction>2022/08/08 17:45:54.000.563,=E:\documentz\delphi\2010\ADROID 14\custom\rESOURCES\Microsoft.Web.WebView2.WinForms.dll</Transaction>
+    <Transaction>2022/08/08 17:45:54.000.689,=E:\documentz\delphi\2010\ADROID 14\custom\rESOURCES\MUSIC.mp3</Transaction>
+    <Transaction>2022/08/08 17:49:23.000.998,E:\documentz\delphi\2010\ADROID 14\custom\rESOURCES\MUSIC.mp3=</Transaction>
+    <Transaction>2022/08/08 17:49:23.000.981,E:\documentz\delphi\2010\ADROID 14\custom\rESOURCES\Microsoft.Web.WebView2.WinForms.dll=</Transaction>
+    <Transaction>2022/08/08 17:49:24.000.022,E:\documentz\delphi\2010\ADROID 14\custom\rESOURCES\Microsoft.Web.WebView2.Core.dll=</Transaction>
+    <Transaction>2022/08/08 17:49:24.000.012,E:\documentz\delphi\2010\ADROID 14\custom\rESOURCES\WebView2Loader.dll=</Transaction>
+    <Transaction>2022/08/08 17:49:24.000.029,E:\documentz\delphi\2010\ADROID 14\custom\rESOURCES\Microsoft.Web.WebView2.Wpf.dll=</Transaction>
+    <Transaction>2022/08/08 17:50:35.000.523,=E:\documentz\delphi\2010\ADROID 14\custom\dwin.png</Transaction>
+    <Transaction>2022/08/08 17:50:35.000.487,=E:\documentz\delphi\2010\ADROID 14\custom\Awin.png</Transaction>
+    <Transaction>2022/08/08 17:50:43.000.257,=E:\documentz\delphi\2010\ADROID 14\Unit5.pas</Transaction>
+  </Transactions>
+</BorlandProject>
